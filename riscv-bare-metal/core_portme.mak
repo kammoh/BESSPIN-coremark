@@ -113,6 +113,8 @@ PORT_CFLAGS = \
 	-fno-common \
 	-fno-builtin-printf \
 	-fno-builtin-memset \
+	-fno-builtin \
+	-fno-lto \
 	-I$(COMMON_DIR)
 FLAGS_STR = "$(PORT_CFLAGS) $(XCFLAGS) $(XLFLAGS) $(LFLAGS_END)"
 CFLAGS = $(PORT_CFLAGS) -I$(PORT_DIR) -I. -DFLAGS_STR=\"$(FLAGS_STR)\" 
